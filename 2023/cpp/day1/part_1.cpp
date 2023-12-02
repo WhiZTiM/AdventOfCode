@@ -9,7 +9,8 @@
 #include <sstream>
 
 int main() {    
-    auto pipeline = std::views::filter([](auto c){ return c >= '0' && c <= '9'; })
+    auto pipeline = 
+          std::views::filter([](auto c){ return c >= '0' && c <= '9'; })
         | std::views::transform([](auto c){ return c - '0'; })
         | std::views::take(1);
 
