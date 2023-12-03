@@ -8,6 +8,9 @@
 #include <numeric>
 #include <sstream>
 
+
+// This solution could be much shorter, just wanted to experiment with tokenization based approach
+
 struct Game {
     int id = 0;
     std::vector<std::array<int, 3>> cubes = {}; // Red, Blue, Green
