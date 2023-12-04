@@ -29,7 +29,7 @@ int main() {
             if (board[c[0]][c[1]] != '*') {
                 return false;
             }
-            auto [_, inserted] = cache.insert(c[0] * board.size() + c[1]); //insert a hash
+            auto [_, inserted] = cache.insert(c[0] * board.size() + c[1]);
             return inserted;
         });
 
